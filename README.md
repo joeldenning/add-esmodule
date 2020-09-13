@@ -4,7 +4,7 @@ Add \_\_esModule property to native ES module objects
 
 ## Motivation
 
-Much of the javascript ecosystem relies of ES modules having an `__esModule` property. However, native ES modules do not have that property. This project is a workaround for that problem.
+Much of the javascript ecosystem relies of ES modules having an `__esModule` property. However, native ES modules do not have that property and are not extensible. This project is a workaround for that problem.
 
 ## Installation
 
