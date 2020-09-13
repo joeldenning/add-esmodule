@@ -34,4 +34,12 @@ describe("cloneWithEsModuleProperty", () => {
     assert.strictEqual(Object.isExtensible(withEsModule), false);
     assert.strictEqual(Object.isFrozen(withEsModule), true);
   });
+
+  it("has the proper toString", () => {
+    const withEsModule = cloneWithEsModuleProperty(basic);
+    assert.strictEqual(
+      Object.prototype.toString.call(withEsModule),
+      Object.prototype.toString.call(basic)
+    );
+  });
 });
